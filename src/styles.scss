@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #f5f5f5;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: #ff9323;
+  text-transform: capitalize;
+  margin-bottom: 24px !important;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control {
+  border-radius: 0;
+  height: 60px;
+}
+.form-select {
+  border-radius: 0;
+  height: 60px;
+}
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-check-inline {
+  label {
+    display: inline !important;
+  }
+}
+//
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  background-color: #1a1a1a;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+  color: #f5f5f5 !important;
+  cursor: pointer;
+
+  &:hover,
+  &.active {
+    color: #f1a00a !important;
+  }
+}
+.mainContent {
+  padding: 40px;
+
+  strong {
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .isSpecial {
+    font-style: italic;
+    text-decoration: underline;
+  }
+  fieldset {
+    background-color: #1a1a1a;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #2e363e !important;
+    box-shadow: 8px 7px 5px 0px #1a1a1a;
+
+    legend {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      float: none;
+      width: auto;
+      padding: 10px 20px;
+      background-color: #0d6efd;
+      color: #f5f5f5;
+    }
+  }
+}
+
+table td {
+  padding: 15px 0;
+}
+
+.card-body {
+  color: #151515;
+}

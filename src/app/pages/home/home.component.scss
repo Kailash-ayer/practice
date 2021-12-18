@@ -1,0 +1,15 @@
+ol {
+  margin-bottom: 0;
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      color: green;
+    }
+  }
+}
+
+img {
+  max-width: 300px;
+}

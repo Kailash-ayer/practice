@@ -1,0 +1,42 @@
+<div class="container-fluid mb-5">
+  <h1>Blog</h1>
+</div>
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+
+  <!-- {{blogModel | json}} -->
+  <div class="row">
+    <div class="col-md-8">
+
+
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" required #name="ngModel" class="form-control" name="Name" [(ngModel)]="blogModel.Name">
+
+      </div>
+
+      <div class="form-group">
+        <label>ImagePath</label>
+        <input type="text" class="form-control" #imagePath="ngModel" name="ImagePath" [(ngModel)]="blogModel.ImagePath">
+      </div>
+
+      <div class="form-group">
+        <label>BlogUrl</label>
+        <input type="text" class="form-control" #blogUrl="ngModel" required name="BlogUrl"
+          [(ngModel)]="blogModel.BlogUrl">
+
+      </div>
+
+      <div class="form-group">
+        <label>BlogBrief</label>
+        <input type="text" class="form-control" #blogBrief="ngModel" required name="BlogBrief"
+          [(ngModel)]="blogModel.BlogBrief">
+
+      </div>
+
+
+
+
+      <button class="btn btn-primary" type="submit">Submit Form</button>
+    </div>
+  </div>
+</form>
